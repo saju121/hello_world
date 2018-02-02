@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+from rf import read_rf, rfstats
+
+stream = read_rf()
+print(stream)
+print('\nStats:\n', stream[0].stats)
+stream[:3].plot()
